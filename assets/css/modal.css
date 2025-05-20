@@ -1,0 +1,375 @@
+/* 
+//////////////////////////////////////////////////////
+Final Author Start
+//////////////////////////////////////////////////////
+Final Author @ Mohammad Aminul Islam
+//////////////////////////////////////////////////////
+Final Author End
+//////////////////////////////////////////////////////
+*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 80px;
+  margin: 0 0 0 70%;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #333;
+  width: 100%;
+}
+
+.close {
+  color: #c378fb;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fb7878;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Input Form Start  */
+#name {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#name:hover {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#email {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#email:hover {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#phone-no {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#phone-no:hover {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  height: 20px;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="text"],
+select,
+textarea:hover {
+  width: 100%;
+  height: 20px;
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.modal-btn-one {
+  margin-left: 40%;
+}
+
+/* input[type="submit"] {
+  background-color: #c378fb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #fb7878;
+} */
+
+.contact-form {
+  text-align: start;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* Modal For Book Appointment Start */
+.book-btn {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  height: 60px;
+  background: rgb(194, 120, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(194, 120, 251, 1) 0%,
+    rgba(249, 115, 255, 1) 100%
+  );
+  -webkit-box-shadow: 5px 5px 30px 0px rgba(195, 120, 251, 0.35);
+  -moz-box-shadow: 5px 5px 30px 0px rgba(195, 120, 251, 0.35);
+  box-shadow: 5px 5px 30px 0px rgba(195, 120, 251, 0.35);
+  display: inline-block;
+  overflow: hidden;
+  padding: 18px 40px;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.book-btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  background: rgb(251, 120, 120);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 120, 120, 1) 0%,
+    rgba(255, 175, 116, 1) 100%
+  );
+  transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+  transform: scale(0.2, 1);
+}
+
+.book-btn:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.book-btn:hover {
+  -webkit-box-shadow: 5px 5px 30px 0px rgba(251, 122, 120, 0.35);
+  -moz-box-shadow: 5px 5px 30px 0px rgba(251, 122, 120, 0.35);
+  box-shadow: 5px 5px 30px 0px rgba(251, 122, 120, 0.35);
+  transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+/* Modal Input Form Start */
+/* Modal Input Form End */
+
+/* Modal For Book Appointment End */
+
+/* Modal For Coffee With Me Start */
+.coffee-btn {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  height: 60px;
+  background: rgb(194, 120, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(194, 120, 251, 1) 0%,
+    rgba(249, 115, 255, 1) 100%
+  );
+  -webkit-box-shadow: 5px 5px 30px 0px rgba(195, 120, 251, 0.35);
+  -moz-box-shadow: 5px 5px 30px 0px rgba(195, 120, 251, 0.35);
+  box-shadow: 5px 5px 30px 0px rgba(195, 120, 251, 0.35);
+  display: inline-block;
+  overflow: hidden;
+  padding: 18px 40px;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.coffee-btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  background: rgb(251, 120, 120);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 120, 120, 1) 0%,
+    rgba(255, 175, 116, 1) 100%
+  );
+  transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+  transform: scale(0.2, 1);
+}
+
+.coffee-btn:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.coffee-btn:hover {
+  -webkit-box-shadow: 5px 5px 30px 0px rgba(251, 122, 120, 0.35);
+  -moz-box-shadow: 5px 5px 30px 0px rgba(251, 122, 120, 0.35);
+  box-shadow: 5px 5px 30px 0px rgba(251, 122, 120, 0.35);
+  transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+/* Modal coffe rest */
+.modal-box {
+  position: fixed;
+  left: 35%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+section.active #show-modal {
+  display: none;
+}
+
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+  padding: 20px 10px;
+  border-radius: 24px;
+  background-color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+section.active .modal-box {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-massage {
+  text-align: start;
+}
+
+.modal-box h2 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #333;
+}
+
+.modal-box h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+
+.modal-box .buttons {
+  margin-top: 25px;
+}
+
+.modal-box button {
+  font-size: 14px;
+  padding: 6px 12px;
+  margin: 0 10px;
+}
+
+#name-area {
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+#mail-area {
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+#message-area {
+  width: 100%;
+  height: 100px;
+  font-size: 20px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+/* Modal For Coffee With Me End */
